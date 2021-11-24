@@ -1,9 +1,10 @@
 import "./App.css"
-import {useEffect, useState} from 'react'
-import {axios} from 'axios'
+import {useEffect} from 'react'
+import axios from 'axios'
 import Navbar from "./components/Navbar.js";
 import Header from './components/Header.js';
-import DisplayPhotos from './components/DisplayPhotos';
+// import DisplayPhotos from './components/DisplayPhotos';
+
 // import {Component} from 'react'
 import './components/Navbar.css'
 import BottomHeader from "./components/BottomHeader";
@@ -21,51 +22,46 @@ import BottomHeader from "./components/BottomHeader";
 // function getCampImages(){
 //   let exploreButton  = document.getElmenentById
 
-// }
-// class App extends Component{
-//   render(){
-//     return (
-//       <header className="App-header">
-//         <div className="App">
-//           <Navbar />
-//           <Header />
-//           <h1>Welcome to Notario Parks</h1>
-//         </div>
-//       </header>
-//     )
-//   }
-// }
-
 
 function App() {
-  // call our API when the component is intially rendered
+
+  const [allPhotos, setAllPhotos] = useState([])
+  const [filteredPhotos, setFilterPhotos] = useState([])
+
+  const getPhotos = (event, photoColor) =>{
+    event.preventDefault();
+    
+  }
   useEffect(() => {
-    // a variable that hold your api key
     const apikey = 'kNdiDp0P503CDAj8ZVSGMG_NIn8xdGoNqYmXRMoU8s4';
     axios({
-      url:'https://api.unsplash.com/search/photos',
-      method:'GET',
+      url: 'https://api.unsplash.com/search/photos',
+      method: 'GET',
       dataResponse:'json',
       params: {
         query:'camping',
         client_id: apikey,
-        per_page: 30
+        per_page: 20
       }
-    })
-  })
+    }).then((data) =>{
+      console.log(data)
+
+      // const ImageResults = results.data.results
+    }) 
+  }, []) 
+  
+  // const handleShowImages
 
   return (
     <div className="App">
           <Navbar />
           <Header />
           <BottomHeader />
-          <DisplayPhotos />
-        <h1>Show me Camp Gallery</h1>
     </div>
   );
 }
 
-export default App;
+export default App; 
 
 
 
