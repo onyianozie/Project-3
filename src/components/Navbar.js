@@ -1,11 +1,10 @@
 // import React,{useState} from 'react'
-import React, { Component } from 'react'
 import { MenuItems } from './MenuItems'
 import './Navbar.css'
 
 
-class Navbar extends Component {
-    return () {
+const Navbar = () => {
+    return (
         <nav className="NavbarItems">
            <h1 className="navbar-logo">Camp<i className="fab fa-react"></i></h1>
            <div className="menu-icon">
@@ -21,7 +20,7 @@ class Navbar extends Component {
                
            </ul>
         </nav>
-    }
+    )
 }
 
 export default Navbar
