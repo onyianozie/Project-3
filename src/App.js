@@ -5,6 +5,9 @@ import Navbar from "./components/Navbar.js";
 import Header from './components/Header.js';
 import BottomHeader from "./components/BottomHeader";
 
+// About the App
+
+//Developed a React App for a camp site that allows users to display images fetched from an Unsplash API, to the page after clicking the explore button. Once images display with their location titles, users can click on the image to see the camp location on a map, using a Map API fetch.
  
 // Pseudo Code
 // Make an API call to the Unsplash API
