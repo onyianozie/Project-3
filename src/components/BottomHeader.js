@@ -1,6 +1,8 @@
 import { useState } from "react"
 
-
+// Create a buttom header where the button lives and 
+// Add function to the button, when clicked it reveals camp photos
+// when not clicked it dosent reveal any photos.
 
 function BottomHeader (setDisplayPhotos){
     

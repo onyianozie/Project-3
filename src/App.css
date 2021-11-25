@@ -29,6 +29,9 @@ body{
   padding-right: 8%;
 }
 
+
+/* Header Section */
+
 nav ul li{
   display: inline-block;
   margin-left: 60px;
@@ -62,31 +65,7 @@ a{
   padding: 50px 0;
   color: #FFF7E4;
 }
-/* .logo{
-  cursor: pointer;
-  margin-right: auto;
-} */
-/* .searchicon{
-  width: 15px;
-  cursor: pointer;
-  margin-left: 40px;
-} */
-/* .hero_text{
-  position: absolute;
-  text-align: center;
-  left: 8%;
 
-} */
-/* .col{
-  flex-basis: 50%;
-} */
-
-/* header{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
-} */
 h1{
   position: absolute;
   width: 977px;
@@ -136,6 +115,9 @@ p{
   color: #FFF7E4;
 }
 
+
+/*  Bottom Header  */
+
 .btn-section{
   background: #FFF7E4;
   height: 20vh;
@@ -176,10 +158,9 @@ button{
 button:hover{
   color:sienna;
 }
-.gallery li{
-  list-style: none;
-  
-}
+
+/* API Gallery Diplay */
+
 .imagcontainer{
   margin-top: 80px;
   padding:60px 0;
@@ -195,6 +176,12 @@ img{
   /* display: inline-block; */
 }
 
+.gallery li{
+  list-style: none;
+  
+}
+
+/*  Media Queries */
 
 @media (max-width: 1486px) {
   h1{

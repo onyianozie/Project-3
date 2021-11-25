@@ -26,8 +26,13 @@ function App() {
   const [setDisplayphotos] = useState(false)
   // const handleShowImages
 
+
+  // API call for components to be rendereds
     useEffect(()=> {
+
+      // create a variable to store the apikey
       const apikey = 'kNdiDp0P503CDAj8ZVSGMG_NIn8xdGoNqYmXRMoU8s4';
+      // use AXIOS object
       axios({
         url: 'https://api.unsplash.com/search/photos',
         method: 'GET',
@@ -39,11 +44,12 @@ function App() {
         }
       }).then((response) =>{
         setAllPhotos(response.data.results)
-        // const ImageResults = results.data.results
+       
       }) 
     }, [setAllPhotos])
     console.log(allPhotos)
       
+    // App 
   return (
     <div className="App">
           {/* add components into App */}
