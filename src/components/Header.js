@@ -1,4 +1,6 @@
 
+// Header Page section
+// Create funtion
 const Header = () =>{
         return(
             <header>

@@ -29,6 +29,9 @@ body{
   padding-right: 8%;
 }
 
+
+/* Header Section */
+
 nav ul li{
   display: inline-block;
   margin-left: 60px;
@@ -55,31 +58,14 @@ a{
   padding: 50px 0;
   font-size: 18px;
 }
-/* .logo{
-  cursor: pointer;
-  margin-right: auto;
-} */
-/* .searchicon{
-  width: 15px;
-  cursor: pointer;
-  margin-left: 40px;
-} */
-/* .hero_text{
-  position: absolute;
-  text-align: center;
-  left: 8%;
-
-} */
-/* .col{
-  flex-basis: 50%;
-} */
-
-/* header{
+.NavbarItems{
+  height: 80vh;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
+  padding: 50px 0;
+  color: #FFF7E4;
+}
 
-} */
 h1{
   position: absolute;
   width: 977px;
@@ -129,6 +115,9 @@ p{
   color: #FFF7E4;
 }
 
+
+/*  Bottom Header  */
+
 .btn-section{
   background: #FFF7E4;
   height: 20vh;
@@ -148,8 +137,7 @@ p{
 button h3{
   font-family: "Cardo";
   font-style: normal;
-  font-weight: normal;
-  font-size: 30px;
+  font-size: 50px;
   line-height: 38px;
   text-align: center;
   color: #FFF7E4;
@@ -167,10 +155,12 @@ button{
   border-radius: 5px;
 
 }
-.gallery li{
-  list-style: none;
-  
+button:hover{
+  color:sienna;
 }
+
+/* API Gallery Diplay */
+
 .imagcontainer{
   margin-top: 80px;
   padding:60px 0;
@@ -184,4 +174,39 @@ button{
 img{
   max-width: 100%;
   /* display: inline-block; */
+}
+
+.gallery li{
+  list-style: none;
+  
+}
+
+/*  Media Queries */
+
+@media (max-width: 1486px) {
+  h1{
+    font-size: 100px;
+  }
+  h2{
+    font-size: 40px;
+  }
+  p{
+    font-size: 16px;
+    top: 420px;
+  }
+  header{
+    
+  }
+}
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
 }
