@@ -6,16 +6,18 @@ import Header from './components/Header.js';
 import BottomHeader from "./components/BottomHeader";
 
  
+// Pseudo Code
 // Make an API call to the Unsplash API
  //Collect data based on search parameters for "camping"
  // Store the results of the API call in a state 
  // create a onClick call out function for the explore button that will evntually
  // Dipslay photo results on camp page.
-// event listeners
+
+
+ // event listeners
 // exploreBtn.addEventListeners('click', exploreGallery);
 // get list that matches with camping
-// function getCampImages(){
-//   let exploreButton  = document.getElmenentById
+
 
 
 function App() {
@@ -72,9 +74,3 @@ function App() {
 export default App; 
 
 
-
-// const [allPhotos, setAllPhotos] = useState([])
-  // const [filteredPhotos, setFilterPhotos] = useState([])
-
-  // const getPhotos = (event, photoColor) =>{
-  //   event.preventDefault();
