@@ -73,6 +73,9 @@ function App() {
               }
             </ul>
           </div>
+          <div className="footer">
+            <h3>Created at Juno College by Dre</h3>
+          </div>
     </div>
   );
 }
