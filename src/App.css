@@ -16,8 +16,8 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 }
 
 body{
-  
   text-align: center;
+  background-color: #FFF7E4;
 }
 .App{
   width: 100%;
@@ -29,13 +29,6 @@ body{
   padding-right: 8%;
 }
 
-.NavbarItems{
-  background: none;
-  height: 12%;
-  display: flex;
-  justify-content: center;
-  
-}
 nav ul li{
   display: inline-block;
   margin-left: 60px;
@@ -48,6 +41,11 @@ nav ul li{
 .nav_links li a{
   transition: all 0.3s ease 0s;
   
+}
+
+.navbar-logo h1{
+  cursor: pointer;
+  margin-right: auto;
 }
 
 a{
@@ -75,12 +73,19 @@ a{
 /* .col{
   flex-basis: 50%;
 } */
+
+/* header{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+} */
 h1{
   position: absolute;
   width: 977px;
   height: 160px;
   left: 275px;
-  top: 290px;
+  top: 200px;
 
 
   font-family: "Averia Serif Libre";
@@ -127,15 +132,26 @@ p{
 .btn-section{
   background: #FFF7E4;
   height: 20vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
 }
+
+.fa-solid{
+  color:#B39A62;
+  width: 80px;
+}
+  /* .iconContent{
+    justify-content: space-evenly;
+  } */
+  
 button h3{
   font-family: "Cardo";
   font-style: normal;
   font-weight: normal;
-  font-size: 28px;
+  font-size: 30px;
   line-height: 38px;
   text-align: center;
-
   color: #FFF7E4;
 }
 
@@ -149,6 +165,23 @@ button{
   left: 75%;
   border: none;
   border-radius: 5px;
-  /* top: 80%; */
 
+}
+.gallery li{
+  list-style: none;
+  
+}
+.imagcontainer{
+  margin-top: 80px;
+  padding:60px 0;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  
+}
+img{
+  max-width: 100%;
+  /* display: inline-block; */
 }

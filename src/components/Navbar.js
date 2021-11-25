@@ -3,10 +3,11 @@ import { MenuItems } from './MenuItems'
 import './Navbar.css'
 
 
+
 const Navbar = () => {
     return (
         <nav className="NavbarItems">
-           <h1 className="navbar-logo">Camp<i className="fab fa-react"></i></h1>
+           <h4 className="navbar-logo">React Camp<i className="fab fa-react"></i></h4>
            <div className="menu-icon">
            </div>
            <ul>
