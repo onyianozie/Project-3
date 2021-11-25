@@ -1,4 +1,7 @@
 .NavbarItems{
-    background: #B39A62;
     height: 80vh;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+    color: #FFF7E4;
 }

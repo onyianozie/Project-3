@@ -1,14 +1,24 @@
+import { useState } from "react"
 
 
-const BottomHeader = () =>{
 
+function BottomHeader (setDisplayPhotos){
+    
+    const [userClick, setUserClick] = useState('placeholder')
+
+    const handleUserClick = (event) => {
+        setUserClick(event.target.value)
+    }
     return(
-        <div className="btn-section">
-            <img src="" className="campfire" alt="campfire icon"></img>
-            <img src="" className="arrow" alt="arrow icon"></img>
-            <button className="navigation">Explore Camp Grounds</button>
+        <div class="square" onSubmit={(event) => setDisplayPhotos.getPhotos(event, userClick)}>
+            <div class="btn-section">
+                <h5 className="icons"><i className="fa-solid fa-campfire"></i></h5>
+                <h5 className="icons"><i className="fa-solid fa-arrow-right-long"></i></h5>
+                <button className="navigation" onClick={handleUserClick}>Explore Camp Grounds</button>
+            </div>
         </div>
     )
+
 }
 
 export default BottomHeader;
