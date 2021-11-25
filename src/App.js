@@ -3,10 +3,8 @@ import {useEffect, useState} from 'react'
 import axios from 'axios'
 import Navbar from "./components/Navbar.js";
 import Header from './components/Header.js';
-// import DisplayPhotos from './components/DisplayPhotos';
-// import {Component} from 'react'
-import './components/Navbar.css'
 import BottomHeader from "./components/BottomHeader";
+
  
 // Make an API call to the Unsplash API
  //Collect data based on search parameters for "camping"
@@ -23,7 +21,7 @@ import BottomHeader from "./components/BottomHeader";
 function App() {
 
   const [allPhotos, setAllPhotos] = useState([])
-  const [displayPhotos, setDisplayphotos] = useState(false)
+  const [setDisplayphotos] = useState(false)
   // const handleShowImages
 
     useEffect(()=> {
@@ -57,9 +55,9 @@ function App() {
               {
                 allPhotos.map((photoObject) => {
                   return(
-                    <li>
+                    <li key={photoObject.id}>
                       <div className="imagcontainer">
-                        <img src={photoObject.urls.full} />
+                        <img src={photoObject.urls.full} alt={photoObject.alt_description}/>
                       </div>
                     </li>
                   )

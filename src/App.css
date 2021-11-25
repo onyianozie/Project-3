@@ -55,6 +55,13 @@ a{
   padding: 50px 0;
   font-size: 18px;
 }
+.NavbarItems{
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+  color: #FFF7E4;
+}
 /* .logo{
   cursor: pointer;
   margin-right: auto;
@@ -148,8 +155,7 @@ p{
 button h3{
   font-family: "Cardo";
   font-style: normal;
-  font-weight: normal;
-  font-size: 30px;
+  font-size: 50px;
   line-height: 38px;
   text-align: center;
   color: #FFF7E4;
@@ -166,6 +172,9 @@ button{
   border: none;
   border-radius: 5px;
 
+}
+button:hover{
+  color:sienna;
 }
 .gallery li{
   list-style: none;
@@ -184,4 +193,33 @@ button{
 img{
   max-width: 100%;
   /* display: inline-block; */
+}
+
+
+@media (max-width: 1486px) {
+  h1{
+    font-size: 100px;
+  }
+  h2{
+    font-size: 40px;
+  }
+  p{
+    font-size: 16px;
+    top: 420px;
+  }
+  header{
+    
+  }
+}
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
 }

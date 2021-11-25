@@ -1,6 +1,5 @@
 // import React,{useState} from 'react'
 import { MenuItems } from './MenuItems'
-import './Navbar.css'
 
 
 
